@@ -1,12 +1,18 @@
-<!DOCTYPE html>
-<html>
+<html lang="eng">
   <head>
-    <meta charset="utf-8"
+    <meta charset="utf-8">
     <title>D3 Page Template</title>
-    <script type ="text/javascript" src="d3/js"></script>
+    <script type ="text/javascript" src="d3.js"></script>
   </head>
   <body>
     <script type="text/javascript">
+      d3.select("body").append("p").text("hey does this work????");
+      var dataset = [frog,dog,cat,lion,lobster,pandas, chinchillas];
+      d3.select("body").selectAll("p")
+        .data(dataset)
+        .enter()
+        .append("p")
+        .text(function(d) { return d; });
     </script>
   </body>
-  <html> 
+  </html>
