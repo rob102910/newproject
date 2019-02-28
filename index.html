@@ -4,10 +4,10 @@
     <title>D3 Page Template</title>
     <script type ="text/javascript" src="d3.js"></script>
   </head>
-  <body>
+  <body style="background-color:lightcyan;">
     <script text/javascript>
       d3.select("body").append("h1").text("Making a website using D3");
-      d3.select("body").append("p").text("Every Element Added has been added using ");
+      d3.select("body").append("p").text("Every Element Added has been added using just javascript");
       var dataset = ["frog","dog","cat","lion","lobster","pandas", "chinchillas"];
       d3.select("body").append("ul")
       d3.select("ul").selectAll("li")
@@ -15,10 +15,21 @@
         .enter()
         .append("li")
         .text(function(d) { return d; });
-    </script>
-    <script>
-      body { background-color:lightcyan; }
-        
+      d3.select("body").append("table")
+      d3.select("table").append("tr")
+      d3.select("tr").append("th").text("Table Heading")
+      d3.select("tr").append("th").text("Table Heading")
+      d3.select("tr").append("th").text("Table Heading")
+      d3.select("table").append("tr")
+      d3.select("tr").append("td").text("Table Data")
+      d3.select("tr").append("td").text("Table Data")
+      d3.select("tr").append("td").text("Table Data")
+      d3.select("table").append("tr")
+      d3.select("tr").append("td").text("Table Data")
+      d3.select("tr").append("td").text("Table Data")
+      d3.select("tr").append("td").text("Table Data")
+      
+      
     </script>
   </body>
   </html>
