@@ -5,14 +5,19 @@
     <script type ="text/javascript" src="d3.js"></script>
   </head>
   <body>
-    <script type="text/javascript">
-      d3.select("body").append("p").text("hey does this work????");
+    <script text/javascript>
+      d3.select("body").append("p").text("Hey does this work????");
       var dataset = ["frog","dog","cat","lion","lobster","pandas", "chinchillas"];
-      d3.select("body").selectAll("p")
+      d3.select("body").append("ol")
+      d3.select("ol").selectAll("li")
         .data(dataset)
         .enter()
-        .append("p")
+        .append("li")
         .text(function(d) { return d; });
+    </script>
+    <script text/css>
+      body { background-color:lightcyan; }
+        
     </script>
   </body>
   </html>
